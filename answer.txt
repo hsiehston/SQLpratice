@@ -1,0 +1,4 @@
+/*第一題*/
+select test.student.s_name,test.student.s_age,test.subject.subject , test.subject.score
+from test.student,test.subject
+where test.subject.s_no=test.student.s_no and test.student.s_name='JOE' and score>=60;
