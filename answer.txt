@@ -2,3 +2,10 @@
 select test.student.s_name,test.student.s_age,test.subject.subject , test.subject.score
 from test.student,test.subject
 where test.subject.s_no=test.student.s_no and test.student.s_name='JOE' and score>=60;
+
+/*第二題*/
+update test.subject 
+set test.subject.score=60
+where test.subject.s_no='A1' and subject='Math';
+
+/*mysql 必須到preferences >sql editor 最底下 取消勾選 Safe Updates*/
