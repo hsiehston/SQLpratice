@@ -1,0 +1,12 @@
+3.	Geography做group by群組
+
+select test2.geography.region_name, count(geography.store_name) as 總計 
+from test2.geography
+group by test2.geography.region_name;
+
+4.	Geography、store_information二張table做join
+
+select test2.geography.region_name,test2.geography.store_name,
+test2.store_information.sales,test2.store_information.Txn_Date 
+from test2.store_information,test2.geography
+where test2.store_information.store_name=test2.geography.store_name;
