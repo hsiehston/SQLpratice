@@ -9,3 +9,8 @@ set test.subject.score=60
 where test.subject.s_no='A1' and subject='Math';
 
 /*mysql 必須到preferences >sql editor 最底下 取消勾選 Safe Updates*/
+
+/*第三題*/
+select test.subject.subject, sum(test.subject.score) as 合計, count(test.subject.score) as 個數 
+from test.subject 
+group by test.subject.subject;
